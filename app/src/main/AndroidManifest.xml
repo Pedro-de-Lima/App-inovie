@@ -17,6 +17,9 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
+            android:name=".TelaCarregamento"
+            android:exported="false" />
+        <activity
             android:name=".FormLogin"
             android:exported="true">
             <intent-filter>

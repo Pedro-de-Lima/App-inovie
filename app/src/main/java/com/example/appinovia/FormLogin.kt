@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 
 class FormLogin : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,15 +14,28 @@ class FormLogin : AppCompatActivity() {
         supportActionBar!!.hide()
 
         val botaoLogin = findViewById<Button>(R.id.botaoLogin)
+        val editUsuario = findViewById<EditText>(R.id.editUsuario)
+
 
         botaoLogin.setOnClickListener{
-            irParaTelaPrincipal()
+
+            val nomeDigitado = editUsuario.text.toString()
+
+            intent.putExtra("NOME_DIGITADO", nomeDigitado)
+
+            irParaTelaCarregamento()
         }
 
     }
 
-    private fun irParaTelaPrincipal() {
-        val segundaTela = Intent(this, MainActivity::class.java)
+    private fun irParaTelaCarregamento() {
+
+        val segundaTela = Intent(this, TelaCarregamento::class.java)
+
         startActivity(segundaTela)
     }
+}
+
+private fun Intent.putExtra(name: Any) {
+
 }
