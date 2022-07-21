@@ -15,6 +15,6 @@ class TelaCarregamento : AppCompatActivity() {
 
         val txtNomeDr = findViewById<TextView>(R.id.txtNomeDr)
 
-        txtNomeDr.text = "Bem Vinda,${txtNomeDr}!"
+        txtNomeDr.text = "Bem Vinda,${nomeDigitado}!"
     }
 }

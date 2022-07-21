@@ -16,13 +16,10 @@ class FormLogin : AppCompatActivity() {
         val botaoLogin = findViewById<Button>(R.id.botaoLogin)
         val editUsuario = findViewById<EditText>(R.id.editUsuario)
 
+        val nomeDigitado = editUsuario.text.toString()
+        intent.putExtra("NOME_DIGITADO", nomeDigitado)
 
         botaoLogin.setOnClickListener{
-
-            val nomeDigitado = editUsuario.text.toString()
-
-            intent.putExtra("NOME_DIGITADO", nomeDigitado)
-
             irParaTelaCarregamento()
         }
 
@@ -30,7 +27,7 @@ class FormLogin : AppCompatActivity() {
 
     private fun irParaTelaCarregamento() {
 
-        val segundaTela = Intent(this, TelaCarregamento::class.java)
+        val segundaTela = Intent(this, TelaPrincipal::class.java)
 
         startActivity(segundaTela)
     }
