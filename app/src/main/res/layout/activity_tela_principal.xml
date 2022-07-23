@@ -80,4 +80,12 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="@id/view2" />
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="298dp"
+        android:tooltipText="@string/saldação"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

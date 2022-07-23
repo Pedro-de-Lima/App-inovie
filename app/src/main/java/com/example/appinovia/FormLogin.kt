@@ -27,7 +27,7 @@ class FormLogin : AppCompatActivity() {
 
     private fun irParaTelaCarregamento() {
 
-        val segundaTela = Intent(this, TelaPrincipal::class.java)
+        val segundaTela = Intent(this, TelaPreparacao::class.java)
 
         startActivity(segundaTela)
     }
