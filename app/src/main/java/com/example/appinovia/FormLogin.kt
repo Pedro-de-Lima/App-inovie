@@ -1,10 +1,10 @@
 package com.example.appinovia
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import androidx.appcompat.app.AppCompatActivity
 
 class FormLogin : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +27,7 @@ class FormLogin : AppCompatActivity() {
 
     private fun irParaTelaCarregamento() {
 
-        val segundaTela = Intent(this, TelaPreparacao::class.java)
+        val segundaTela = Intent(this, TelaPrincipal::class.java)
 
         startActivity(segundaTela)
     }
