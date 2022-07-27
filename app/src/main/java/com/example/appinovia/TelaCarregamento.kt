@@ -1,10 +1,12 @@
 package com.example.appinovia
 
-import androidx.appcompat.app.AppCompatActivity
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 
 class TelaCarregamento : AppCompatActivity() {
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tela_carregamento)
@@ -15,6 +17,6 @@ class TelaCarregamento : AppCompatActivity() {
 
         val txtNomeDr = findViewById<TextView>(R.id.txtNomeDr)
 
-        txtNomeDr.text = "Bem Vinda,${nomeDigitado}!"
+        txtNomeDr.text = "Bem Vinda,$nomeDigitado!"
     }
 }

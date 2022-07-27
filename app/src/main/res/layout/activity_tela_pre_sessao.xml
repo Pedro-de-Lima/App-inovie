@@ -41,7 +41,7 @@
         android:id="@+id/viewAbdomenCosta"
         style="@style/Container_Corpo_Abdomen_Costa"
         android:layout_marginTop="96dp"
-        android:visibility="visible"
+        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.274"
         app:layout_constraintStart_toStartOf="parent"

@@ -14,10 +14,6 @@ class FormLogin : AppCompatActivity() {
         supportActionBar!!.hide()
 
         val botaoLogin = findViewById<Button>(R.id.botaoLogin)
-        val editUsuario = findViewById<EditText>(R.id.editUsuario)
-
-        val nomeDigitado = editUsuario.text.toString()
-        intent.putExtra("NOME_DIGITADO", nomeDigitado)
 
         botaoLogin.setOnClickListener{
             irParaTelaCarregamento()
@@ -26,8 +22,11 @@ class FormLogin : AppCompatActivity() {
     }
 
     private fun irParaTelaCarregamento() {
-
+        val editUsuario = findViewById<EditText>(R.id.editUsuario)
+        val nomeDigitado = editUsuario.text.toString()
         val segundaTela = Intent(this, TelaPrincipal::class.java)
+
+        intent.putExtra("NOME_DIGITADO", nomeDigitado)
 
         startActivity(segundaTela)
     }

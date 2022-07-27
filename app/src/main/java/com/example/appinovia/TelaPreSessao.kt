@@ -16,21 +16,29 @@ class TelaPreSessao : AppCompatActivity() {
         val botaoVoltar = findViewById<ImageButton>(R.id.botaoVoltar)
         val viewAbdomenCosta = findViewById<View>(R.id.viewAbdomenCosta)
 
+        viewAbdomenCosta.visibility = View.INVISIBLE
+
         viewAbdomenCosta.setOnClickListener {
-            if(viewAbdomenCosta.isClickable)
-        }
+
+            }
 
         botaoVoltar.setOnClickListener{
             voltar()
         }
     }
 
-    private fun visivel(){
+    fun visivel(){
+        var viewAbdomenCosta = findViewById<View>(R.id.viewAbdomenCosta)
+        if(viewAbdomenCosta.isClickable){
+            viewAbdomenCosta.visibility = View.VISIBLE
+
+        }
 
     }
 
     private fun voltar(){
         val voltar = Intent(this, TelaPassoaPasso::class.java)
+
         startActivity(voltar)
     }
 }
