@@ -1,18 +1,28 @@
 package com.example.appinovia
 
-import android.content.res.Resources
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
-import  androidx.viewpager2.adapter.FragmentStateAdapter
+import androidx.viewpager2.adapter.FragmentStateAdapter
 
-class ViewPagerAdapter (fragmentActivity: FragmentActivity) : FragmentStateAdapter(fragmentActivity) {
-    override fun getItemCount() = 3
+class ViewPagerAdapter (fragmentActivity: FragmentActivity) :
+    FragmentStateAdapter(fragmentActivity){
+        private val fragmentList: MutableList<Fragment> = ArrayList()
+        private val titleList: MutableList<String> = ArrayList()
+
+    fun getTitle(position: Int): String{
+        return titleList[position]
+    }
+
+    fun addFragment(frangment: Fragment, title: String){
+        fragmentList.add(frangment)
+        titleList.add(title)
+    }
 
     override fun createFragment(position: Int): Fragment {
-        return when(position){
-            0 -> {PrincipalMinhaAgendaFragment()}
-            1 -> {PrincipalAgendaClinicaFragment()}
-            else -> { throw Resources.NotFoundException("posição não encontrada")}
-        }
+        return  fragmentList[position]
     }
-}
+
+    override fun getItemCount(): Int {
+        return fragmentList.size
+    }
+        }

@@ -30,10 +30,20 @@
         <item name="android:layout_height">100dp</item>
     </style>
 
+    <style name="ContainerCliente">
+        <item name="android:background">@drawable/container_info</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">200dp</item>
+    </style>
+
     <style name="Container_Corpo_Abdomen_Costa">
         <item name="android:background">@drawable/conteiner_corpo_abdomen_costa</item>
         <item name="android:layout_width">45dp</item>
         <item name="android:layout_height">45dp</item>
+    </style>
+    <style name="tabLayoutInformacao">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
     </style>
 
 

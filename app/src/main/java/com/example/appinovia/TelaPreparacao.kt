@@ -15,6 +15,7 @@ class TelaPreparacao : AppCompatActivity() {
 
         val txtCancelar = findViewById<TextView>(R.id.txtCancelar)
         val botaoAvancar = findViewById<Button>(R.id.botaoAvancar)
+        val txtInformacao = findViewById<TextView>(R.id.txtInformacao)
 
         txtCancelar.setOnClickListener{
             cancelar()
@@ -22,6 +23,10 @@ class TelaPreparacao : AppCompatActivity() {
 
         botaoAvancar.setOnClickListener{
             botaoIniciar()
+        }
+
+        txtInformacao.setOnClickListener{
+            maisInformacoes()
         }
 
     }
@@ -34,6 +39,11 @@ class TelaPreparacao : AppCompatActivity() {
     private fun botaoIniciar(){
         val avancar = Intent(this,TelaPassoaPasso::class.java)
         startActivity(avancar)
+    }
+
+    private fun maisInformacoes(){
+        val informacoes = Intent(this, TelaInformacoes::class.java)
+        startActivity(informacoes)
     }
 
 }

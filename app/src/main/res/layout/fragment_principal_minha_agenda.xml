@@ -10,41 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <View
-            android:id="@+id/viewProxima"
-            style="@style/ContainerInfo"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="25dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints" />
-
-
-        <TextView
-            android:id="@+id/txtPaciente"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="25dp"
-            android:text="Luciana - Criolipólise"
-            android:textColor="@color/black"
-            android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="@id/viewProxima"
-            app:layout_constraintStart_toStartOf="@id/viewProxima"
-            app:layout_constraintTop_toTopOf="@id/viewProxima"></TextView>
-
-        <TextView
-            android:id="@+id/txtHorario"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="25dp"
-            android:text="Horário - 11h - 13h30"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="@id/viewProxima"
-            app:layout_constraintEnd_toEndOf="@id/viewProxima"
-            app:layout_constraintHorizontal_bias="0.502"
-            app:layout_constraintStart_toStartOf="@id/viewProxima" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.core.widget.NestedScrollView>
