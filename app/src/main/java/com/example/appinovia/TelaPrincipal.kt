@@ -7,6 +7,7 @@ import com.example.appinovia.databinding.ActivityTelaPrincipalBinding
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
+
 class TelaPrincipal : AppCompatActivity() {
 
     private lateinit var binding: ActivityTelaPrincipalBinding
@@ -23,8 +24,8 @@ class TelaPrincipal : AppCompatActivity() {
         binding.viewProxima.setOnClickListener {
             proximaTela()
         }
-
     }
+
 
     private fun configTablayout(){
         val adapter = ViewPagerAdapter(this)
