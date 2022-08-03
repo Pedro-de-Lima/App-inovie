@@ -26,7 +26,6 @@ class TelaPrincipal : AppCompatActivity() {
         }
     }
 
-
     private fun configTablayout(){
         val adapter = ViewPagerAdapter(this)
         binding.viewPrincipal.setAdapter(adapter)
