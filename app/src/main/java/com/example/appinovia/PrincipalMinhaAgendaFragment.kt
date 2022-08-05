@@ -12,10 +12,9 @@ class PrincipalMinhaAgendaFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
+
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_principal_minha_agenda, container, false)
-
     }
-
 }

@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.appinovia">
 
+    <uses-permission android:name="android.permission.CAMERA"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppInovia"
         tools:targetApi="31">
+        <activity
+            android:name=".TelaFotos"
+            android:exported="false" />
+        <activity
+            android:name=".TelaMedidas"
+            android:exported="false" />
         <activity
             android:name=".TelaInformacoes"
             android:exported="false" />

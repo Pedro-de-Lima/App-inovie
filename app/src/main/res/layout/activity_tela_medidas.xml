@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TelaMedidas">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Luciana Santos - Sessão: 2/3 - Criolipólise" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Adicionar medições" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Medida 1" />
+    <EditText
+        android:id="@+id/editLocalMedida"
+        style="@style/Edit_text"
+        android:layout_marginTop="50dp"
+        android:autofillHints="name"
+        android:inputType="textPersonName"/>
+    <EditText
+        android:id="@+id/editCmMedida"
+        style="@style/Edit_text"
+        android:layout_marginTop="20dp"
+        android:autofillHints="name"
+        android:inputType="textPersonName"/>
+
+    <LinearLayout
+        android:id="@+id/editTextLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/botaoAddMedidas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+ Adicionar mais medições"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continuar"/>
+
+    <Button
+        android:id="@+id/botaoTirarFoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_outline_add_a_photo_24"
+        android:text="Tirar medidas por fotos" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pular medidas"
+        android:gravity="center"
+        />
+
+</LinearLayout>

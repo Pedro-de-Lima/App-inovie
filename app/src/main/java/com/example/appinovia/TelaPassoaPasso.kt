@@ -14,7 +14,7 @@ class TelaPassoaPasso : AppCompatActivity() {
         supportActionBar!!.hide()
 
         val botaoIniciar = findViewById<Button>(R.id.botaoIniciar)
-        val txtCancelar = findViewById<TextView>(R.id.txtCancelar)
+        val txtCancelar = findViewById<TextView>(R.id.txtCancelarCorpo)
 
         botaoIniciar.setOnClickListener{
             IrTelaPreSessao()

@@ -13,7 +13,7 @@ class TelaPreparacao : AppCompatActivity() {
 
         supportActionBar!!.hide()
 
-        val txtCancelar = findViewById<TextView>(R.id.txtCancelar)
+        val txtCancelar = findViewById<TextView>(R.id.txtCancelarCorpo)
         val botaoAvancar = findViewById<Button>(R.id.botaoAvancar)
         val txtInformacao = findViewById<TextView>(R.id.txtInformacao)
 
