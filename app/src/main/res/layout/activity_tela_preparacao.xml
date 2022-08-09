@@ -17,11 +17,28 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:background="@color/white"
+        android:text="Iniciar Sessão de"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:text="Luciana Santos"
+        android:textColor="@color/dark_blue"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/preparacao"
         app:layout_constraintStart_toStartOf="@+id/preparacao"
         app:layout_constraintTop_toTopOf="@+id/preparacao" />
@@ -31,7 +48,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="25dp"
-        android:text="Sessão: 2/3 - Cliolipólise"
+        android:textSize="15sp"
+        android:text="@string/sessao"
         app:layout_constraintBottom_toBottomOf="@+id/preparacao"
         app:layout_constraintEnd_toEndOf="@+id/preparacao"
         app:layout_constraintStart_toStartOf="@+id/preparacao" />
@@ -41,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
-        android:text="Equipamento: Criodermis Crioplace Medical 01"
+        android:text="@string/equipamento"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/preparacao" />

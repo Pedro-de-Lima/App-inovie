@@ -12,10 +12,9 @@
         android:background="@color/white">
 
         <ListView
-            android:id="@+id/listview"
+            android:id="@+id/agenda"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
+            android:layout_height="match_parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.core.widget.NestedScrollView>
