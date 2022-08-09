@@ -2,6 +2,8 @@ package com.example.appinovia
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.View
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -15,19 +17,34 @@ class TelaPreSessao : AppCompatActivity() {
 
         val botaoVoltar = findViewById<ImageButton>(R.id.botaoVoltar)
         val txtCancelar = findViewById<TextView>(R.id.txtCancelarCorpo)
-        //val viewAbdomenCosta = findViewById<View>(R.id.viewAbdomenCosta)
+        val txtSelecao = findViewById<TextView>(R.id.txtSelecao)
+        val btCosta = findViewById<Button>(R.id.btCosta)
+        val btAbdomen = findViewById<Button>(R.id.btAbdomen)
+        val btContinuar = findViewById<Button>(R.id.btContinuar)
+        val viewAbdomen = findViewById<View>(R.id.viewAbdomen)
+        val viewCosta = findViewById<View>(R.id.viewCosta)
 
-       /* viewAbdomenCosta.visibility = View.INVISIBLE
-
-        viewAbdomenCosta.setOnClickListener {
-
-            }*/
+        //btAbdomen.visibility = View.INVISIBLE
 
         botaoVoltar.setOnClickListener{
             voltar()
         }
         txtCancelar.setOnClickListener{
             cancelar()
+        }
+
+        btAbdomen.setOnClickListener{
+            viewAbdomen.visibility = View.VISIBLE
+            txtSelecao.text = "Local selecionado: Abdomen"
+            txtCancelar.visibility = View.GONE
+            btContinuar.visibility = View.VISIBLE
+        }
+
+        btCosta.setOnClickListener{
+            viewCosta.visibility = View.VISIBLE
+            txtSelecao.text = "Local selecionado: Costa"
+            txtCancelar.visibility = View.GONE
+            btContinuar.visibility = View.VISIBLE
         }
     }
 

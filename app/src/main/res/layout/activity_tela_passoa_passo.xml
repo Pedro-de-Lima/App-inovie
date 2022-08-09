@@ -32,81 +32,81 @@
             android:id="@+id/textView12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:drawableLeft="@drawable/ic_baseline_add_circle_24"
-            android:text="Pré sessão" />
+            android:drawableLeft="@drawable/ic_baseline_looks_one_24"
+            android:text="Pré sessão"
+            android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/txtSelecao"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:textSize="18sp"
+            android:layout_marginTop="10dp"
             android:drawableLeft="@drawable/ic_outline_hdr_auto_24"
-            android:text="Local e áreas da sessão" />
+            android:text="Local e áreas da sessão"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/txtMedicoes"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:textSize="18sp"
+            android:layout_marginTop="10dp"
             android:drawableLeft="@drawable/ic_baseline_add_circle_24"
-            android:text="Medições" />
+            android:text="Medições"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/textView15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:textSize="18sp"
+            android:layout_marginTop="10dp"
             android:drawableLeft="@drawable/ic_baseline_add_circle_24"
-            android:text="Fotos do local" />
+            android:text="Fotos do local"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/textView16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:textSize="18sp"
+            android:layout_marginTop="10dp"
             android:drawableLeft="@drawable/ic_baseline_add_circle_24"
-            android:text="Dados da sessão" />
+            android:text="Dados da sessão"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/textView17"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:textSize="18sp"
+            android:layout_marginTop="10dp"
             android:drawableLeft="@drawable/ic_baseline_add_circle_24"
-            android:text="Pós sessão" />
+            android:text="Pós sessão"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/textView18"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:textSize="18sp"
+            android:layout_marginTop="10dp"
             android:drawableLeft="@drawable/ic_baseline_add_circle_24"
-            android:text="Medições" />
+            android:text="Medições"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/textView19"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:textSize="18sp"
+            android:layout_marginTop="10dp"
             android:drawableLeft="@drawable/ic_baseline_add_circle_24"
-            android:text="Fotos do local" />
+            android:text="Fotos do local"
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:textSize="18sp"
+            android:layout_marginTop="10dp"
             android:drawableLeft="@drawable/ic_baseline_check_circle_24"
-            android:text="Sessão finalizada" />
+            android:text="Sessão finalizada"
+            android:textSize="16sp" />
     </LinearLayout>
 
     <androidx.appcompat.widget.AppCompatButton

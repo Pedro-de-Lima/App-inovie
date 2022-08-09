@@ -6,6 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".TelaPreSessao">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+
+        <ImageButton
+            android:id="@+id/botaoVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/img_seta" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Pré sessão"
+            android:textColor="@color/dark_blue"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView9"
@@ -18,54 +47,89 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/txtSelecao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="Selecione onde será feito a sessão"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/corpoFrenteCosta"
         android:layout_width="match_parent"
         android:layout_height="350dp"
         android:layout_marginTop="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/txtSelecao"
         app:srcCompat="@drawable/imgcorpo2" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Pré sessão"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/txtCancelarCorpo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:text="Cancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageButton
-        android:id="@+id/botaoVoltar"
+    <Button
+        android:id="@+id/btAbdomen"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="150dp"
+        app:layout_constraintEnd_toEndOf="@+id/corpoFrenteCosta"
+        app:layout_constraintStart_toStartOf="@+id/corpoFrenteCosta"
+        app:layout_constraintTop_toTopOf="@+id/corpoFrenteCosta" />
+
+    <Button
+        android:id="@+id/btCosta"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="110dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/corpoFrenteCosta"
+        app:layout_constraintStart_toStartOf="@+id/corpoFrenteCosta"
+        app:layout_constraintTop_toTopOf="@+id/corpoFrenteCosta" />
+
+    <View
+        android:id="@+id/viewAbdomen"
+        style="@style/Container_Corpo_Abdomen_Costa"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="150dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/corpoFrenteCosta"
+        app:layout_constraintStart_toStartOf="@id/corpoFrenteCosta"
+        app:layout_constraintTop_toTopOf="@+id/corpoFrenteCosta" />
+
+    <View
+        android:id="@+id/viewCosta"
+        style="@style/Container_Corpo_Abdomen_Costa"
+        android:layout_width="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="105dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/corpoFrenteCosta"
+        app:layout_constraintStart_toStartOf="@id/corpoFrenteCosta"
+        app:layout_constraintTop_toTopOf="@+id/corpoFrenteCosta" />
+
+    <Button
+        android:id="@+id/btContinuar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@color/white"
+        android:text="Continuar"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_seta" />
+        app:layout_constraintTop_toBottomOf="@+id/corpoFrenteCosta" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

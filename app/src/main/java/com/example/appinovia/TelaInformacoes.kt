@@ -1,9 +1,7 @@
 package com.example.appinovia
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 import com.example.appinovia.databinding.ActivityTelaInformacoesBinding
 import com.google.android.material.tabs.TabLayout
@@ -13,7 +11,7 @@ class TelaInformacoes : AppCompatActivity() {
 
     private lateinit var binding: ActivityTelaInformacoesBinding
 
-    @SuppressLint("WrongViewCast")
+    //@SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityTelaInformacoesBinding.inflate(layoutInflater)
@@ -21,14 +19,11 @@ class TelaInformacoes : AppCompatActivity() {
 
         supportActionBar!!.hide()
 
-        val btVoltar = findViewById<ImageButton>(R.id.btvoltarInformacoes)
-
-        configTablayout()
-
-        btVoltar.setOnClickListener{
+        binding.btvoltarInformacoes.setOnClickListener{
             voluntary()
         }
 
+        configTablayout()
     }
 
     private fun configTablayout(){
@@ -47,8 +42,7 @@ class TelaInformacoes : AppCompatActivity() {
     }
 
     private fun voluntary(){
-        val informacoes = Intent(this, TelaPreparacao::class.java)
-
-        startActivity(informacoes)
+        val voltarInformacao = Intent(this, TelaPreparacao::class.java)
+        startActivity(voltarInformacao)
     }
 }
