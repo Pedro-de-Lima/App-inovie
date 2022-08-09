@@ -7,10 +7,37 @@
     android:orientation="vertical"
     tools:context=".TelaMedidas">
 
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/botaoVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:srcCompat="@drawable/img_seta" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Pré sessão"
+            android:textColor="@color/dark_blue"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
     <TextView
         android:id="@+id/textView8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="Luciana Santos - Sessão: 2/3 - Criolipólise" />
 
@@ -19,29 +46,34 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="20dp"
         android:text="Adicionar medições" />
-
-    <TextView
-        android:id="@+id/textView21"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="Medida 1" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="200dp">
+        android:layout_height="215dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+                android:textColor="@color/dark_blue"
+            android:text="Medida 1" />
+
             <EditText
                 android:id="@+id/editLocalMedida"
                 style="@style/Edit_text"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="15dp"
                 android:autofillHints="name"
+                android:hint="Local da Medição"
                 android:inputType="textPersonName" />
 
             <EditText
@@ -49,26 +81,33 @@
                 style="@style/Edit_text"
                 android:layout_marginTop="20dp"
                 android:autofillHints="name"
+                android:hint="Medição(em cm)"
                 android:inputType="textPersonName" />
 
             <LinearLayout
                 android:id="@+id/editTextLinearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"></LinearLayout>
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/botaoAddMedidas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+            android:text="+ Adicionar mais medições"
+            />
+
         </LinearLayout>
     </ScrollView>
 
-    <Button
-        android:id="@+id/botaoAddMedidas"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="+ Adicionar mais medições"
-        />
+
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="Continuar"/>
 
     <Button

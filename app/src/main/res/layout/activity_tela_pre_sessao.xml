@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".TelaPreSessao">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
+        android:orientation="horizontal">
 
 
         <ImageButton
@@ -18,8 +19,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/white"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/img_seta" />
 
         <TextView
@@ -30,9 +29,7 @@
             android:text="Pré sessão"
             android:textColor="@color/dark_blue"
             android:textSize="15sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            />
 
     </LinearLayout>
 
@@ -41,57 +38,51 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:layout_gravity="center"
         android:text="Luciana Santos - Sessão: 2/3 - Criolipólise"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        />
 
     <TextView
         android:id="@+id/txtSelecao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
+        android:layout_gravity="center"
         android:text="Selecione onde será feito a sessão"
         android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        />
 
-    <ImageView
-        android:id="@+id/corpoFrenteCosta"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSelecao"
-        app:srcCompat="@drawable/imgcorpo2" />
-
-    <TextView
-        android:id="@+id/txtCancelarCorpo"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cancelar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        >
 
-    <Button
+        <ImageView
+            android:id="@+id/corpoFrenteCosta"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/imgcorpo2" />
+
+        <Button
         android:id="@+id/btAbdomen"
         android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="110dp"
-        android:layout_marginEnd="150dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="152dp"
         app:layout_constraintEnd_toEndOf="@+id/corpoFrenteCosta"
         app:layout_constraintStart_toStartOf="@+id/corpoFrenteCosta"
-        app:layout_constraintTop_toTopOf="@+id/corpoFrenteCosta" />
+        app:layout_constraintTop_toTopOf="@+id/corpoFrenteCosta"
+        />
 
     <Button
         android:id="@+id/btCosta"
         android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="105dp"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="@+id/corpoFrenteCosta"
         app:layout_constraintStart_toStartOf="@+id/corpoFrenteCosta"
@@ -100,10 +91,10 @@
     <View
         android:id="@+id/viewAbdomen"
         style="@style/Container_Corpo_Abdomen_Costa"
-        android:layout_width="30dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="105dp"
-        android:layout_marginEnd="150dp"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="152dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="@id/corpoFrenteCosta"
         app:layout_constraintStart_toStartOf="@id/corpoFrenteCosta"
@@ -112,24 +103,31 @@
     <View
         android:id="@+id/viewCosta"
         style="@style/Container_Corpo_Abdomen_Costa"
-        android:layout_width="30dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="105dp"
+        android:layout_width="35dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="104dp"
         android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="@id/corpoFrenteCosta"
         app:layout_constraintStart_toStartOf="@id/corpoFrenteCosta"
         app:layout_constraintTop_toTopOf="@+id/corpoFrenteCosta" />
+</androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
         android:id="@+id/btContinuar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:text="Continuar"
         android:visibility="invisible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/corpoFrenteCosta" />
+        />
 
+    <TextView
+        android:id="@+id/txtCancelarCorpo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:layout_gravity="center"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

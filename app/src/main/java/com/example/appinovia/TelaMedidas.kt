@@ -22,7 +22,6 @@ class TelaMedidas : AppCompatActivity() {
         botaoAddMedidas.setOnClickListener {
             // Create EditText
             val editText = EditText(this)
-            editText.setHint("Enter something")
             editText.layoutParams = LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT
@@ -30,7 +29,6 @@ class TelaMedidas : AppCompatActivity() {
             editText.setPadding(20, 20, 20, 20)
 
             val editText2 = EditText(this)
-            editText.setHint("Enter something")
             editText.layoutParams = LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT
@@ -38,8 +36,8 @@ class TelaMedidas : AppCompatActivity() {
             editText.setPadding(20, 20, 20, 20)
 
             // Add EditText to LinearLayout
-            editLinearLayout?.addView(editText)
-            editLinearLayout?.addView(editText2)
+            editLinearLayout.addView(editText)
+            editLinearLayout.addView(editText2)
         }
 
         botaoTirarFoto.setOnClickListener{

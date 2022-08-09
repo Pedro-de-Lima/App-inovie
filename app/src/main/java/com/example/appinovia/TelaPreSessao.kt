@@ -33,6 +33,10 @@ class TelaPreSessao : AppCompatActivity() {
             cancelar()
         }
 
+        btContinuar.setOnClickListener {
+            continuar()
+        }
+
         btAbdomen.setOnClickListener{
             viewAbdomen.visibility = View.VISIBLE
             txtSelecao.text = "Local selecionado: Abdomen"
@@ -46,6 +50,8 @@ class TelaPreSessao : AppCompatActivity() {
             txtCancelar.visibility = View.GONE
             btContinuar.visibility = View.VISIBLE
         }
+
+
     }
 
     /*fun visivel(){
@@ -67,5 +73,11 @@ class TelaPreSessao : AppCompatActivity() {
         val cancelar = Intent(this, TelaMedidas::class.java)
 
         startActivity(cancelar)
+    }
+
+    private fun continuar(){
+        val telaMedidas = Intent(this, TelaMedidas::class.java)
+
+        startActivity(telaMedidas)
     }
 }
