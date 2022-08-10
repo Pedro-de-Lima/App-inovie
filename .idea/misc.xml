@@ -5,7 +5,10 @@
       <map>
         <entry key="..\:/appInovia/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.159" />
         <entry key="..\:/appInovia/app/src/main/res/drawable/background.xml" value="0.175" />
+        <entry key="..\:/appInovia/app/src/main/res/drawable/bt_ir_tela_fotos.xml" value="0.2" />
+        <entry key="..\:/appInovia/app/src/main/res/drawable/btaddmedidas.xml" value="0.143" />
         <entry key="..\:/appInovia/app/src/main/res/drawable/button_login.xml" value="0.1" />
+        <entry key="..\:/appInovia/app/src/main/res/drawable/checkbox.xml" value="0.1565" />
         <entry key="..\:/appInovia/app/src/main/res/drawable/container_info.xml" value="0.159" />
         <entry key="..\:/appInovia/app/src/main/res/drawable/conteiner_corpo_abdomen_costa.xml" value="0.159" />
         <entry key="..\:/appInovia/app/src/main/res/drawable/edit_text.xml" value="0.175" />
@@ -22,6 +25,7 @@
         <entry key="..\:/appInovia/app/src/main/res/layout/activity_tela_carregamento.xml" value="0.25" />
         <entry key="..\:/appInovia/app/src/main/res/layout/activity_tela_fotos.xml" value="0.25" />
         <entry key="..\:/appInovia/app/src/main/res/layout/activity_tela_informacoes.xml" value="0.33" />
+        <entry key="..\:/appInovia/app/src/main/res/layout/activity_tela_locais_trabalhados.xml" value="0.5" />
         <entry key="..\:/appInovia/app/src/main/res/layout/activity_tela_medidas.xml" value="0.5" />
         <entry key="..\:/appInovia/app/src/main/res/layout/activity_tela_passoa_passo.xml" value="0.5" />
         <entry key="..\:/appInovia/app/src/main/res/layout/activity_tela_pre_sessao.xml" value="0.5" />

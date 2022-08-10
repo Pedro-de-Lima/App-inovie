@@ -3,9 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.appinovia">
 
-    <uses-feature android:name="android.hardware.camera"
+    <uses-feature
+        android:name="android.hardware.camera"
         android:required="false" />
-
 
     <application
         android:allowBackup="true"
@@ -17,6 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppInovia"
         tools:targetApi="31">
+        <activity
+            android:name=".TelaLocaisTrabalhados"
+            android:exported="false" />
         <activity
             android:name=".TelaFotos"
             android:exported="false" />

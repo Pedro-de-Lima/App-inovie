@@ -113,13 +113,14 @@
         app:layout_constraintTop_toTopOf="@+id/corpoFrenteCosta" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/btContinuar"
         android:id="@+id/btContinuar"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Continuar"
         android:visibility="invisible"
+        android:text="Continuar"
         />
 
     <TextView

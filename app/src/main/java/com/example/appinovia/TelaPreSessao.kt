@@ -70,13 +70,13 @@ class TelaPreSessao : AppCompatActivity() {
     }
 
     private fun cancelar(){
-        val cancelar = Intent(this, TelaMedidas::class.java)
+        val cancelar = Intent(this, TelaPassoaPasso::class.java)
 
         startActivity(cancelar)
     }
 
     private fun continuar(){
-        val telaMedidas = Intent(this, TelaMedidas::class.java)
+        val telaMedidas = Intent(this, TelaLocaisTrabalhados::class.java)
 
         startActivity(telaMedidas)
     }

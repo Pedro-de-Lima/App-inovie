@@ -92,11 +92,12 @@
             </LinearLayout>
 
             <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/botaoAddMedidas"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+                style="@style/btAddMedidas"
+                android:id="@+id/botaoAddMedidas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_add_24"
                 android:layout_marginTop="20dp"
-            android:text="+ Adicionar mais medições"
             />
 
         </LinearLayout>
@@ -104,23 +105,26 @@
 
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Continuar"/>
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/btIrFoto"
         android:id="@+id/botaoTirarFoto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawableLeft="@drawable/ic_outline_add_a_photo_24"
-        android:text="Tirar medidas por fotos" />
+        />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Pular medidas"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         />
 
