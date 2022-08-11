@@ -16,8 +16,8 @@
 
         <ImageButton
             android:id="@+id/botaoVoltar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:background="@color/white"
             app:srcCompat="@drawable/img_seta" />
 
@@ -28,7 +28,7 @@
             android:gravity="center"
             android:text="Pré sessão"
             android:textColor="@color/dark_blue"
-            android:textSize="15sp"
+            android:textSize="17sp"
             />
 
     </LinearLayout>
